@@ -1,19 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="Speed Towing & Recovery logo">
   <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#0B3A5B"/>
-      <stop offset="1" stop-color="#0E5A7A"/>
+    <linearGradient id="r" x1="0" x2="1">
+      <stop offset="0" stop-color="#E11D2E"/>
+      <stop offset="1" stop-color="#FF2D3D"/>
     </linearGradient>
+    <linearGradient id="b" x1="0" x2="1">
+      <stop offset="0" stop-color="#07090C"/>
+      <stop offset="1" stop-color="#0B0E13"/>
+    </linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
   </defs>
-  <rect x="0" y="0" width="560" height="160" rx="24" fill="url(#g)"/>
-  <g fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
-    <path d="M84 92h184l26-38h56l24 38h40"/>
-    <path d="M114 92l20-30h42"/>
-    <circle cx="142" cy="110" r="14"/>
-    <circle cx="330" cy="110" r="14"/>
-    <path d="M406 74h34"/>
+  <rect width="560" height="160" rx="26" fill="url(#b)"/>
+  <path d="M0 118 C110 78, 250 190, 560 88 L560 160 L0 160 Z" fill="url(#r)" opacity="0.92"/>
+  <g filter="url(#s)">
+    <g transform="translate(56,44)">
+      <path d="M0 58h176l22-34h60l22 34h30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+      <path d="M20 58l18-28h40" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".95"/>
+      <circle cx="46" cy="76" r="13" fill="none" stroke="#fff" stroke-width="6"/>
+      <circle cx="214" cy="76" r="13" fill="none" stroke="#fff" stroke-width="6"/>
+      <path d="M318 40h36" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+    </g>
   </g>
-  <text x="64" y="56" fill="white" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" font-size="26" font-weight="700">SPEED</text>
-  <text x="64" y="88" fill="white" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" font-size="22" font-weight="600">Towing &amp; Recovery</text>
-  <text x="64" y="118" fill="#F2B233" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" font-size="14" font-weight="700" letter-spacing="1.5">24/7 • KENT, WA</text>
+  <text x="70" y="58" fill="#fff" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" font-size="28" font-weight="900" letter-spacing=".8">SPEED</text>
+  <text x="70" y="90" fill="#fff" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" font-size="22" font-weight="700">Towing &amp; Recovery</text>
+  <text x="70" y="118" fill="#111827" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" font-size="14" font-weight="900" letter-spacing="1.6">24/7 DISPATCH</text>
 </svg>

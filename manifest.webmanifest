@@ -3,8 +3,8 @@
   "short_name": "Speed Tow",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#F7FAFC",
-  "theme_color": "#0B3A5B",
+  "background_color": "#07090C",
+  "theme_color": "#07090C",
   "icons": [
     {
       "src": "/assets/img/favicon.svg",
