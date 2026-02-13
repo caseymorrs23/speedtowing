@@ -1,13 +1,13 @@
 {
   "name": "Speed Towing & Recovery",
   "short_name": "Speed Tow",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#07090C",
-  "theme_color": "#07090C",
+  "theme_color": "#0B0E13",
   "icons": [
     {
-      "src": "/assets/img/favicon.svg",
+      "src": "assets/img/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
