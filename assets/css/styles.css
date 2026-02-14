@@ -33,12 +33,15 @@ img{max-width:100%;height:auto;display:block}
   backdrop-filter: blur(10px);
   border-bottom:1px solid var(--line);
 }
-.topbar__inner{display:flex;align-items:center;gap:16px;min-height:68px}
+.topbar__inner{display:flex;align-items:center;gap:16px;min-height:64px}
 
-.brand{display:flex;align-items:center;gap:12px;min-width:240px}
+.brand{display:flex;align-items:center;gap:12px;min-width:unset}
 .brand__text{display:flex;flex-direction:column;line-height:1.1}
 .brand__name{font-weight:800;letter-spacing:.2px}
 .brand__tag{font-size:12px;color:var(--muted)}
+.brand img{height:52px;width:auto;display:block}
+@media (max-width:720px){.brand img{height:42px}}
+
 
 .nav{display:none;gap:16px;margin-left:auto;margin-right:10px}
 .nav a{font-size:14px;color:var(--muted)}
@@ -46,25 +49,32 @@ img{max-width:100%;height:auto;display:block}
 
 .callpill{
   margin-left:auto;
-  background:rgba(255,255,255,.06);
-  border:1px solid var(--line);
-  padding:10px 14px;
-  border-radius:999px;
-  font-weight:800;
+  background:linear-gradient(180deg, rgba(230,57,47,1) 0%, rgba(190,35,28,1) 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.12);
+  padding:12px 18px;
+  border-radius:12px;
+  font-weight:900;
+  letter-spacing:.2px;
+  font-size:16px;
+  box-shadow:0 10px 22px rgba(230,57,47,.28);
+  display:inline-flex;align-items:center;gap:10px;
 }
-.callpill:hover{border-color:rgba(255,255,255,.18)}
+.callpill:hover{transform:translateY(-1px);filter:saturate(1.05)}
 
 .hero{position:relative;min-height:760px;display:flex;align-items:stretch}
 .hero__bg{
   position:absolute;inset:0;
   background:
-    linear-gradient(90deg, rgba(7,9,12,.84) 0%, rgba(7,9,12,.62) 40%, rgba(7,9,12,.35) 65%, rgba(7,9,12,.82) 100%),
+    linear-gradient(90deg, rgba(7,9,12,.90) 0%, rgba(7,9,12,.78) 48%, rgba(7,9,12,.35) 70%, rgba(7,9,12,.84) 100%),
     url('/assets/img/hero.png');
   background-size:cover;
-  background-position:center;
+  background-position:70% center;
   filter:saturate(1.05) contrast(1.05);
 }
 .hero__inner{position:relative;display:grid;grid-template-columns: 1.2fr .8fr;gap:22px;align-items:center;padding:40px 0}
+.hero__copy{padding:22px 22px 18px;border-radius:18px;background:rgba(7,9,12,.55);border:1px solid rgba(255,255,255,.10);backdrop-filter: blur(8px);box-shadow:0 18px 55px rgba(0,0,0,.45)}
+
 
 .badge{
   display:inline-flex;align-items:center;gap:8px;
