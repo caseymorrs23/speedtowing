@@ -169,7 +169,7 @@ img{max-width:100%;display:block}
 
 .hero-bg{
   position:absolute;inset:-120px -120px auto -120px;height:520px;
-  background:url("../img/hero-bg.svg") center/cover no-repeat;
+  background:url("../img/hero.jpg") center/cover no-repeat;
   opacity:.55;
   pointer-events:none;
   filter: contrast(1.05) saturate(1.1);
@@ -404,3 +404,8 @@ input:focus,textarea:focus{border-color:rgba(255,45,61,.55);box-shadow:0 0 0 3px
   .hero h1{font-size:38px}
   .sticky-call{display:inline-flex}
 }
+
+
+.section-services{position:relative}
+.section-services::before{content:"";position:absolute;inset:0;background:url("../img/services.jpg") center/cover no-repeat;opacity:.10;filter:grayscale(.15) contrast(1.05);pointer-events:none}
+.section-services > .container{position:relative}
