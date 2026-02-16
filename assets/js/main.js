@@ -62,11 +62,8 @@
   }
 
   // Reviews (REPLACE THESE with real snippets)
-  const reviews = [
-    { stars: 5, text: "Fast pickup and clear communication. Driver was careful loading my car and gave a real ETA.", name: "Customer", meta: "Local tow • Example text (replace with real review)" },
-    { stars: 5, text: "Professional, friendly, and handled my AWD vehicle with a flatbed. Would call again.", name: "Customer", meta: "Flatbed tow • Example text (replace with real review)" },
-    { stars: 5, text: "Got me out of a tough spot with a quick winch-out. Smooth process from start to finish.", name: "Customer", meta: "Winch-out • Example text (replace with real review)" },
-  ];
+  const reviews = [];
+
 
   const reviewsGrid = $('#reviewsGrid');
   if (reviewsGrid) {
