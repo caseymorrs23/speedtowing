@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://speedtowingandrecovery.com/sitemap.xml
+
+Sitemap: https://caseymorrs23.github.io/speedtowing/sitemap.xml
