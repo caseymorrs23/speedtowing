@@ -50,15 +50,15 @@ code{background:rgba(255,255,255,.08);padding:.15rem .35rem;border-radius:.4rem}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
 .brand{display:flex;align-items:center;gap:.7rem}
 .brand-mark{
-  width:56px;height:56px;border-radius:14px;
+  width:76px;height:76px;border-radius:16px;
   display:grid;place-items:center;
   background:rgba(255,255,255,.04);
   border:1px solid var(--border);
   overflow:hidden
 }
 .brand-logo-img{
-  width:100%;height:100%;object-fit:contain;
-  padding:8px;
+  width:100%;height:100%;object-fit:cover;
+  padding:0;
 }
 .brand-name{display:block;font-weight:900;letter-spacing:.2px}
 .brand-sub{display:block;color:var(--muted);font-size:.86rem;margin-top:.05rem}
@@ -340,13 +340,21 @@ details > div{margin-top:.5rem;line-height:1.55}
   padding:16px;
 }
 
-/* Added: header junk-cars badge + larger brand */
-.brand-mark{ width:48px; height:48px; font-size:24px; }
-@media (max-width: 720px){ .brand-mark{ width:42px; height:42px; } }
+/* Header sizing overrides */
+.brand-mark{ width:76px; height:76px; font-size:24px; }
+@media (max-width: 720px){ .brand-mark{ width:62px; height:62px; } }
 
 .junk-badge{ display:inline-flex; align-items:center; justify-content:center; padding:4px 8px; border:1px solid var(--border); background:rgba(255,255,255,.04); border-radius:999px; }
-.junk-badge img{ height:28px; width:auto; display:block; }
-@media (max-width: 720px){ .junk-badge{ display:none; } }
+.junk-badge img{ height:40px; width:auto; display:block; }
+@media (max-width: 720px){ .junk-badge img{ height:34px; } }
+
+/* Ensure the "Junk Cars for Cash" badge in the hero quote card is readable */
+.junk-badge-img{height:44px;width:auto;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+@media (max-width: 720px){ .junk-badge-img{height:36px;} }
+
+/* Hero CTAs: add contrast/shading so they stand off the hero photo */
+.hero .btn{box-shadow:0 16px 38px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.10)}
+.hero .btn-outline{background:rgba(0,0,0,.40);border-color:rgba(255,255,255,.18)}
 
 /* Junk-cars callout inside quote card */
 .quote-junk{ margin-top:10px; display:flex; align-items:center; gap:10px; padding:10px; border:1px solid var(--border); background:rgba(255,255,255,.04); border-radius:14px; }
